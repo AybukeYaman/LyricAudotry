@@ -1,28 +1,28 @@
-package Cmpe223HW;
+package test;
 
-public class Node {
-	private int element;
-	private Node next;
-    
-	public Node(int s, Node n) {
-		element =s;
-		next=n;
-	}
+public class Node<T> {
+    private T data;
+    private Node<T> next;
 
-	public int getElement() {
-		return element;
-	}
+    public Node(T data) {
+        this.data = data;
+        this.next = null;
+    }
 
-	public void setElement(int element) {
-		this.element = element;
-	}
+    public T getData() {
+        return data;
+    }
 
-	public Node getNext() {
-		return next;
-	}
+    public void setData(T data) {
+        this.data = data;
+    }
 
-	public void setNext(Node next) {
-		this.next = next;
-	}
-	
+    public Node<T> getNext() {
+        return next;
+    }
+
+    public void setNext(Node<T> next) {
+        this.next = next;
+    }
 }
+
